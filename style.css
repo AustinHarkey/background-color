@@ -22,7 +22,7 @@ body {
 
 }
 
-/* .color {
+.color {
 
     width: 150%;
     height: 250%;
@@ -33,24 +33,21 @@ body {
     transition: transform .6s ease;
     border-radius: 50%;
     z-index: 10
-} */
+}
 
-.color {
-
+/* .color {
     width: 0%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    /* transform: translate(-50%, -50%) scale(0); */
     transition: all .4s ease;
-    /* border-radius: 50%; */
     z-index: 10
-}
+} */
 
 .show {
-    /* transform: translate(-50%, -50%) scale(1); */
-    width: 100%;
+    transform: translate(-50%, -50%) scale(1);
+    /* width: 100%; */
 }
 
 .colorCode {
@@ -82,7 +79,7 @@ body {
     box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
 	-webkit-box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
     -moz-box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -94,7 +91,7 @@ body {
 .btn:hover {
     background: #fff;
     color: #444;
-    border: 1px solid #444;
+    /* border: 1px solid #444; */
 }
 
 .btn:active {
