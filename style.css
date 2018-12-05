@@ -56,7 +56,6 @@ body {
     color: #fff;
     display: inline-block;
     position: absolute;
-    top: 15%;
     left: 50%;
     transform: translate(-50%, -0);
     z-index: 40;
@@ -66,7 +65,7 @@ body {
 
 .btn {
     position: absolute;
-    z-index: 20;
+    z-index: 500;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
