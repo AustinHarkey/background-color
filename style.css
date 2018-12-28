@@ -4,14 +4,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #f7f7f7;
     min-width: 444px;
 }
-
-
-
-
-
 
 .wrapper {
     width: 100%;
@@ -20,7 +15,6 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-
 }
 
 /* .color {
@@ -70,25 +64,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    border-radius: 6px;
+    border-radius: 4px;
     color: #888;
     font-size: 22px;
-    padding: 30px 100px;
+    padding:25px 95px;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
-	-webkit-box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
-    -moz-box-shadow: 1px 10px 22px rgba(0, 0, 0, 0.3)  ; 
     border: 1px solid #fff;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently */
-    
-
-    
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
 
 }
 
@@ -133,9 +121,45 @@ body {
 }
 
 .btn:hover {
-    color: #fff;
-    background: linear-gradient(270deg, #00dfa5, #28c349, #00dddf, #0500df, #8f00df, #df006a, #df0000, #df5a00, #dfbd00);
+    color: #333;
+    background: #fff;
     background-size: 1800% 1800%;
+
+}
+
+.btn2 {
+    position: absolute;
+    z-index: 400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 6px;
+    color: #888;
+    font-size: 22px;
+    padding: 30px 100px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+    box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.2)  ; 
+	-webkit-box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.2)  ; 
+    -moz-box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.2)  ; 
+
+}
+
+.btn2 {
+    color: #fff;
+
+}
+
+.btn2__color {
+    background: linear-gradient(270deg, #1aaf58, #28c388, #00abdf, #456acf, #af68d8, #d8418a, #ff9901, #c0bd09, #6fbd0a, #00c0b0, #366cff , #bc52e6);
+    background-size: 1100% 1100%;
     
     -webkit-animation: AnimationName 5s ease infinite;
     -moz-animation: AnimationName 5s ease infinite;
@@ -149,6 +173,99 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -47%);
+}
+
+.btn:active ~ .btn2 {
+    transform: translate(-50%, -47%);
+}
+
+.save {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.save__plus {
+    background: #aaa;
+    width: 30px;
+    height: 3px;
+}
+
+.save__plus:first-of-type {
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.save__plus:last-child {
+    transform: rotate(-90deg);
+    margin-left: 10px;
+    margin-top: -3px;
+}
+
+.save:hover {
+    background: #ccc;
+}
+
+.save:hover .save__plus {
+    background: #fff;
+}
+
+.listBox {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 44444;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.listBox div {
+    padding: 20px 10px;
+    flex: 1;
+    position: relative;
+}
+
+.newColor {
+    background: #cc0202;
+    height: 20px;
+    width: 20px;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 7px;
+    margin: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.delete:hover {
+
+}
+
+.output p {
+    text-align: center;
 }
 
 @media (max-width: 840px) {
