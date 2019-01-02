@@ -21,6 +21,7 @@ function randomColor() {
     for (var i = 0; i < 6; i++) {
         color += values[Math.floor(Math.random() * 16)];
     }
+    
     fill.classList.add('show');
     fill.style.background = color;
     colorText.innerHTML = color;
